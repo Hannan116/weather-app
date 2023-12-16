@@ -1,0 +1,125 @@
+/* reset and common starts  */
+:root {
+  --primary-color: #0766ad;
+  --secondary-color: #29adb2;
+  --third-color: #c5e898;
+  --fourth-color: #f3f3f3;
+  --fifth-color: #393e46;
+  --sixth-color: #222831;
+  --seventh-color: #00adb5;
+  --eighth-color: #f9ed69;
+
+  --tenth-color: #1640d6;
+
+  --padding: 0.5rem;
+  --transition: all 0.3s;
+  --border-radius: 0.6rem;
+  --box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+}
+body {
+  background-color: var(--fourth-color);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn {
+  border: none;
+  padding: var(--padding);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+.btn:hover {
+  background-color: var(--third-color);
+}
+.card {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  padding: var(--padding);
+}
+.card:hover {
+  box-shadow: 0 20px 40px rgba(72, 78, 85, 0.9);
+  /* transform: scale(1.1); */
+}
+
+.text-center {
+  text-align: center;
+}
+/* reset and common ends  */
+.container {
+  background-color: var(--fourth-color);
+  height: 100vh;
+}
+.card {
+  background-color: var(--seventh-color);
+  width: 80%;
+  flex-direction: column;
+}
+.search {
+  margin-top: 1rem;
+}
+#search-city {
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  text-align: center;
+}
+
+.search img {
+  height: 3rem;
+  width: auto;
+  margin-left: 0.5rem;
+}
+.image {
+  height: 8rem;
+  width: auto;
+}
+.weather-details {
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.temperature {
+  font-size: 2.5rem;
+  color: white;
+}
+.city {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: white;
+}
+.humidity-wind {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.humidity-text, .wind-text{
+    font-size: 1rem;
+    color: white;
+    margin-left: .5rem;
+}
